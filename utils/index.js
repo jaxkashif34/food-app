@@ -1,0 +1,21 @@
+const fonts = {
+  Roboto_Black: require("../assets/fonts/Roboto-Black.ttf"),
+  Roboto_Bold: require("../assets/fonts/Roboto-Bold.ttf"),
+  Roboto_Regular: require("../assets/fonts/Roboto-Regular.ttf"),
+  // Roboto_Black_Italic: require("../assets/fonts/Roboto-BlackItalic.ttf"),
+  // Roboto_BoldI_talic: require("../assets/fonts/Roboto-BoldItalic.ttf"),
+  // Roboto_Italic: require("../assets/fonts/Roboto-Italic.ttf"),
+  // Roboto_Light: require("../assets/fonts/Roboto-Light.ttf"),
+  // Roboto_Light_Italic: require("../assets/fonts/Roboto-LightItalic.ttf"),
+  // Roboto_Medium: require("../assets/fonts/Roboto-Medium.ttf"),
+  // Roboto_Medium_Italic: require("../assets/fonts/Roboto-MediumItalic.ttf"),
+  // Roboto_Thin: require("../assets/fonts/Roboto-Thin.ttf"),
+  // Roboto_Thin_Italic: require("../assets/fonts/Roboto-ThinItalic.ttf"),
+  // Roboto_Condensed_Bold: require("../assets/fonts/RobotoCondensed-Bold.ttf"),
+  // Roboto_Condensed_Bold_Italic: require("../assets/fonts/RobotoCondensed-BoldItalic.ttf"),
+  // Roboto_Condensed_Italic: require("../assets/fonts/RobotoCondensed-Italic.ttf"),
+  // Roboto_Condensed_Light: require("../assets/fonts/RobotoCondensed-Light.ttf"),
+  // Roboto_Condensed_Light_Italic: require("../assets/fonts/RobotoCondensed-LightItalic.ttf"),
+  // Roboto_Condensed_Regular: require("../assets/fonts/RobotoCondensed-Regular.ttf"),
+};
+export { fonts };
