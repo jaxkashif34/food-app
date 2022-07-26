@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
-import { COLORS, FONTS, icons, SIZES } from "../constants";
+import { COLORS, FONTS, icons, SIZES } from "../../constants";
 export default function RestaurantHeader({ data, navigation }) {
   const { item, location } = data;
   return (

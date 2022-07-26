@@ -1,11 +1,11 @@
 import { View, Text, FlatList, TouchableOpacity, Image } from "react-native";
 import React from "react";
-import { selectRestautantList } from "../store/features";
-import { COLORS, FONTS, icons, SIZES } from "../constants";
+import { selectRestautantList } from "../../store/features";
+import { COLORS, FONTS, icons, SIZES } from "../../constants";
 import { useNavigation } from "@react-navigation/native";
 import { useSelector } from "react-redux";
-import { selectCurrentLocation } from "../store/features";
-import { styles } from "./MainCategories";
+import { selectCurrentLocation } from "../../store/features";
+import { styles } from "../Home/MainCategories";
 
 export default function RestaurantList() {
   const restaurantList = useSelector(selectRestautantList);

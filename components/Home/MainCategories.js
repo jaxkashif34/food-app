@@ -7,13 +7,13 @@ import {
   StyleSheet,
 } from "react-native";
 import React from "react";
-import { COLORS, FONTS, SIZES } from "../constants";
+import { COLORS, FONTS, SIZES } from "../../constants";
 import { useSelector, useDispatch } from "react-redux";
 import {
   selectCategoriesList,
   setSelectedCategory,
   selectCategory,
-} from "../store/features";
+} from "../../store/features";
 export default function MainCategories() {
   const categories = useSelector(selectCategoriesList);
   return (

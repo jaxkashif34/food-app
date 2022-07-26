@@ -1,12 +1,14 @@
 import { View, Text, Animated, TouchableOpacity, Image } from "react-native";
 import React from "react";
-import { COLORS, FONTS, icons, SIZES } from "../constants";
+import { COLORS, FONTS, icons, SIZES } from "../../constants";
 import { scrollX } from "./RestaurantFoodInfo";
 import { useSelector } from "react-redux";
-import { selectOrderQty } from "../store/features";
+import { selectOrderQty } from "../../store/features";
 import { isIphoneX } from "react-native-iphone-x-helper";
+import { useNavigation } from "@react-navigation/native";
 
 export default function RestaurantOrder({ data }) {
+  const navigation = useNavigation();
   const { item, location } = data;
   const itemsInCart = useSelector(selectOrderQty);
   return (
@@ -60,7 +62,9 @@ export default function RestaurantOrder({ data }) {
             <Text style={{ marginLeft: SIZES.padding, ...FONTS.h4 }}>8888</Text>
           </View>
         </View>
+
         {/* order Button */}
+
         <View
           style={{
             padding: SIZES.padding * 2,

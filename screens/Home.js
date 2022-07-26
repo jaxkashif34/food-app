@@ -2,9 +2,9 @@ import React from "react";
 import { StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS } from "../constants";
-import HomeHeader from "../components/HomeHeader";
-import MainCategories from "../components/MainCategories";
-import RestaurantList from "../components/RestaurantList";
+import HomeHeader from "../components/Home/HomeHeader";
+import MainCategories from "../components/Home/MainCategories";
+import RestaurantList from "../components//Restaurant/RestaurantList";
 
 const Home = () => {
   return (

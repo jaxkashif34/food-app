@@ -1,8 +1,8 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 import React from "react";
-import { icons, SIZES, FONTS, COLORS } from "../constants";
+import { icons, SIZES, FONTS, COLORS } from "../../constants";
 import { useSelector } from "react-redux";
-import { selectCurrentLocation } from "../store/features";
+import { selectCurrentLocation } from "../../store/features";
 
 export default function HomeHeader() {
   const { streetName } = useSelector(selectCurrentLocation);

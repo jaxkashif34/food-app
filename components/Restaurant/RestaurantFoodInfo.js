@@ -1,8 +1,8 @@
 import { View, Text, Animated, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import { COLORS, FONTS, icons, SIZES } from "../constants";
+import { COLORS, FONTS, icons, SIZES } from "../../constants";
 import { useSelector, useDispatch } from "react-redux";
-import { editOrder, selectOrderQty } from "../store/features";
+import { editOrder, selectOrderQty } from "../../store/features";
 
 export const scrollX = new Animated.Value(0);
 export default function RestaurantFoodInfo({ item }) {
