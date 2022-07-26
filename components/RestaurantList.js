@@ -9,20 +9,11 @@ import { styles } from "./MainCategories";
 
 export default function RestaurantList() {
   const restaurantList = useSelector(selectRestautantList);
-  const getCategoryNameById = (id) => {
-    const category = restaurantList.filter((item) => item.id === id);
-
-    if (category.length > 0) return category[0].name;
-
-    return;
-  };
 
   return (
     <FlatList
       data={restaurantList}
-      renderItem={({ item }) => (
-        <RestaurantItem item={item} getCategory={getCategoryNameById} />
-      )}
+      renderItem={({ item }) => <RestaurantItem item={item} />}
       keyExtractor={(item) => `${item.name}-${item.id}`}
       contentContainerStyle={{
         paddingHorizontal: SIZES.padding * 2,
@@ -32,7 +23,7 @@ export default function RestaurantList() {
   );
 }
 
-const RestaurantItem = ({ item, getCategory }) => {
+const RestaurantItem = ({ item }) => {
   const navigation = useNavigation();
   const location = useSelector(selectCurrentLocation);
   return (
